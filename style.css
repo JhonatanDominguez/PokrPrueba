@@ -1,109 +1,87 @@
 body {
-    background-color: #f0f0f0;
-    font-family: 'Pokemon Solid', sans-serif;
-  }
-  
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-  }
-  
-  main {
-    padding: 2rem;
-  }
-  
-  #pokedex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .poke-card {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px #ccc;
-    margin: 1rem;
-    padding: 1rem;
-    width: 200px;
-    text-align: center;
-  }
-  
-  .poke-card h3 {
-    margin: 0;
-  }
-  
-  .poke-card p {
-    margin: 0;
-  }
-  
-  input, button {
-    margin: 1rem 0;
-  }
-  
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-  }
-  
-  /* Pokémon themed styles */
-  .pokemon-theme {
-    background-color: #f5f5f5;
-    padding: 2rem;
-    text-align: center;
-  }
-  
-  .pokemon-theme h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .pokemon-theme p {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .pokemon-theme button {
-    background-color: #333;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    text-transform: uppercase;
-  }
-  
-  .pokemon-theme button:hover {
-    background-color: #444;
-  }
-  
-  .pokemon-theme .poke-card {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px #ccc;
-    margin: 1rem;
-    padding: 1rem;
-    width: 200px;
-    text-align: center;
-  }
-  
-  .pokemon-theme .poke-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-    margin-bottom: 1rem;
-  }
-  
-  .pokemon-theme .poke-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .pokemon-theme .poke-card p {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-  }
+  background-color: #f0f0f0;
+  font-family: 'Pokemon Solid', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-section, .history-section {
+  width: 80%;
+  margin: 2rem 0;
+}
+
+.poke-container, .poke-history {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.poke-card, .team-container .poke-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #ccc;
+  margin: 1rem;
+  padding: 1rem;
+  width: 150px;
+  text-align: center;
+}
+
+.poke-card img {
+  width: 100px;
+  height: auto;
+}
+
+input, button {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 1rem 0;
+  padding: 1rem;
+  width: 100%;
+}
+
+.team-container h5 {
+  width: 100%;
+  text-align: center;
+}

@@ -8,19 +8,23 @@
 </head>
 <body>
   <header>
-    <h1>Pokémon Pokedex</h1>
+    <h1>Poke Team</h1>
   </header>
   <main>
-    <section>
+    <section class="team-section">
       <h2>My Pokémon Team</h2>
-      <div id="poke-container"></div>
-      <input id="pokemon-input" type="text" placeholder="Enter a Pokémon name">
-      <button id="add-pokemon-btn">Add Pokémon</button>
+      <div id="poke-container" class="poke-container"></div>
+      <input type="text" id="pokemon-input" placeholder="Enter Pokémon name">
+      <button id="add-pokemon-btn">Add Pokemon</button>
       <button id="clear-team-btn">Clear Team</button>
+    </section>
+    <section class="history-section">
+      <h2>Team History</h2>
+      <div id="poke-history" class="poke-history"></div>
     </section>
   </main>
   <footer>
-    <p>&copy; 2023 Pokémon. All rights reserved.</p>
+    <p>&copy; 2024 Pokémon. All rights reserved.</p>
   </footer>
   <script src="script.js"></script>
 </body>
